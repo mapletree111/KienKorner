@@ -1,8 +1,18 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color:#e1e1e1;
 }
 
 a {
   color: #00B7FF;
+}
+
+h1.name {
+  font-size: 64px;
+  margin-bottom: 4px;
+  color: #095169;
+}
+h2.career {
+  color: #059B9A;
 }
