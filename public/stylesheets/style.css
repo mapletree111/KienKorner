@@ -1,7 +1,14 @@
+:root {
+  --left-indent: 100px;
+}
+
 body {
   /* padding: 50px; */
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color:#e1e1e1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 a {
@@ -22,7 +29,7 @@ div.namecareer {
   border-bottom-style: solid;
   border-bottom-width: 10px;
   background-color: white;
-  padding-left: 100px;
+  padding-left: var(--left-indent);
   margin-top: 100px;
   height: 150px;
 }
@@ -45,6 +52,17 @@ div.banner-parallax{
    background-size: cover;
 }
 
-div.contactinfobox{
-  height: 100%;
+footer.contactinfobox{
+  flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  padding: 20px;
+  padding-left: var(--left-indent);
+  background: #9fd86b;
+  color: white;
+}
+
+img.profilepicture{
+  border-radius: 50%;
+  max-width: 400px;
+  position: relative;
+  left: var(--left-indent);
 }
