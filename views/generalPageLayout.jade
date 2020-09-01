@@ -1,0 +1,35 @@
+extends layout
+
+block header
+  div.banner-parallax
+    div.banner
+      div.namecareer
+        div.namecareertextbox
+          h1.name= title
+          h2.career= "Computer Science / Software Developer"
+  div.links
+    span
+      a(href="/")
+        | Home
+    span
+      a(href="/resume")
+        | Resume
+    span
+      a(href="/projects")
+        | Projects
+
+block footer
+  footer.contactinfobox
+    div.logobox
+      a(href="https://www.linkedin.com/in/kien-tran-19bb7486/" target="_blank")
+        div.logo
+          img.logo(src="/images/linkedin.svg")
+          div.socialmediatext= "LinkedIn"
+      a(href="mailto: kien.tran1995@gmail.com" target="_blank")
+        div.logo
+          img.logo(src="/images/email.png")
+          div.socialmediatext="Email"
+      a(href="https://github.com/mapletree111" target="_blank")
+        div.logo
+          img.logo(src="/images/github.png")
+          div.socialmediatext="Github"

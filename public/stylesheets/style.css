@@ -52,6 +52,16 @@ div.banner-parallax{
    background-size: cover;
 }
 
+div.links{
+  padding: 10px 0;
+  text-align: right;
+  padding-right: 100px;
+}
+
+span + span {
+  margin-left: 100px;
+}
+
 footer.contactinfobox{
   flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
   padding: 20px;
@@ -65,6 +75,13 @@ img.profilepicture{
   max-width: 250px;
   position: relative;
   margin-left: 30px;
+}
+h1.greeting{
+  margin-bottom: 0px;
+}
+
+p.greeting{
+  margin-top: 5px;
 }
 
 div.aboutmetext{
