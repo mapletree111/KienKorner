@@ -2,16 +2,39 @@ extends layout
 
 block content
   div.banner-parallax
-  div.banner
-    div.namecareer
-      div.namecareertextbox
-        h1.name= title
-        h2.career= "Computer Science / Software Developer"
-  div.profilepicture
+    div.banner
+      div.namecareer
+        div.namecareertextbox
+          h1.name= title
+          h2.career= "Computer Science / Software Developer"
+  div.links= "Ligma"
+  div.aboutme
     img.profilepicture(src="/images/profilepicture.jpg")
+    div.aboutmetext
+      h1.greeting="Hello,"
+      p.greeting
+        | As a software engineer, I enjoy the long walks through bugs and code reviews.
+        | In all seriousness, my passion in software engineering stems from my enjoyment for problem solving.
+        | This profession constantly challenges me and understand and adapt to new situation.
+        br
+        br
+        | When I am not sitting in front of my computer, you can find me outside year round.
+        | Some hobbies that I enjoy are riding my motorcycle, hiking, and snowboarding.
+        | I'm currently on a quest to find the best budget friendly ramen shop around my area,
+        | so stay tuned to see that project.
 
 block footer
   footer.contactinfobox
-    Scroll Up and Down this page to see the parallax scrolling effect.
-    This div is just here to enable scrolling.
-    Tip: Try to remove the background-attachment property to remove the scrolling effect.
+    div.logobox
+      a(href="https://www.linkedin.com/in/kien-tran-19bb7486/" target="_blank")
+        div.logo
+          img.logo(src="/images/linkedin.svg")
+          div.socialmediatext= "LinkedIn"
+      a(href="mailto: kien.tran1995@gmail.com" target="_blank")
+        div.logo
+          img.logo(src="/images/email.png")
+          div.socialmediatext="Email"
+      a(href="https://github.com/mapletree111" target="_blank")
+        div.logo
+          img.logo(src="/images/github.png")
+          div.socialmediatext="Github"

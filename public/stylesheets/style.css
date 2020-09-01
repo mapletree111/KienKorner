@@ -12,7 +12,7 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #000000;
 }
 
 h1.name {
@@ -39,8 +39,8 @@ div.namecareertextbox{
 }
 div.banner-parallax{
   background-image: url("/images/bannerbg.jpg");
-  height: 400px;
-  position: absolute;
+  height: 300px;
+  /* position: absolute; */
   width: 100%;
   z-index: -1;
   top: 0;
@@ -55,14 +55,34 @@ div.banner-parallax{
 footer.contactinfobox{
   flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
   padding: 20px;
-  padding-left: var(--left-indent);
   background: #9fd86b;
-  color: white;
+  color: black;
+  font-size: 20px;
 }
 
 img.profilepicture{
   border-radius: 50%;
-  max-width: 400px;
+  max-width: 250px;
   position: relative;
-  left: var(--left-indent);
+  margin-left: 30px;
+}
+
+div.aboutmetext{
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 30px;
+  width: 60%;
+}
+
+div.logo{
+  height: 50px;
+  width: 33%;
+  display: inline-block;
+  text-align: center;
+}
+
+img.logo{
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto
 }
