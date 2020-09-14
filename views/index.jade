@@ -1,17 +1,51 @@
 extends generalPageLayout
 
-block content
-  div.aboutme
-    img.profilepicture(src="/images/profilepicture.jpg")
-    div.aboutmetext
-      h1.greeting="Hello,"
-      p.greeting
-        | As a software engineer, I enjoy the long walks through bugs and code reviews.
-        | In all seriousness, my passion in software engineering stems from my enjoyment for problem solving.
-        | This profession constantly challenges me and understand and adapt to new situation.
-        br
-        br
-        | When I am not sitting in front of my computer, you can find me outside year round.
-        | Some hobbies that I enjoy are riding my motorcycle, hiking, and snowboarding.
-        | I'm currently on a quest to find the best budget friendly ramen shop around my area,
-        | so stay tuned to see that project.
+block aboutme
+  section
+    //- img.banner-parallax(src="/images/bannerbg2.jpg")
+    div.banner-parallax
+    div.banner
+      div.namecareer
+        div.namecareertextbox
+          h1.name= title
+          h2.career= "Computer Science / Software Developer"
+    div.links
+      span
+        a.middle(href="/")
+          | HOME
+      span
+        a.middle(href="/experience")
+          | EXPERIENCE
+      span
+        a.middle(href="/projects")
+          | PROJECTS
+    div.aboutme
+      img.profilepicture(src="/images/profilepicture.jpg")
+      div.aboutmetext
+        h1.greeting="Hello,"
+        p.greeting
+          | As a software engineer, I enjoy the long walks through bugs and code reviews.
+          | In all seriousness, my passion in software engineering stems from my enjoyment for problem solving.
+          | This profession constantly challenges me and understand and adapt to new situation.
+          br
+          br
+          | When I am not sitting in front of my computer, you can find me outside year round.
+          | Some hobbies that I enjoy are riding my motorcycle, hiking, and snowboarding.
+          | I'm currently on a quest to find the best budget friendly ramen shop around my area,
+          | so stay tuned to see that project.
+
+block experience
+  section
+    div.intel
+        //- img.profilepicture(src="/images/profilepicture.jpg")
+        div.aboutexprience
+          //- h1.greeting="Hello,"
+          p.job
+            | Intern
+          ul.responsiblity
+            li 
+              | Utilize Caffe deep learning framework to classify static images.
+            li 
+              | Build upon image classification to develop video classification.
+            li 
+              | Improve Machine Learning accuracy through data aggregation, differing algorithms, and feature selection.

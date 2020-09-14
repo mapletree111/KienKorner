@@ -1,7 +1,11 @@
 :root {
   --left-indent: 100px;
 }
-
+html {
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+}
 body {
   /* padding: 50px; */
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -9,6 +13,14 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+}
+
+section {
+  border-bottom: 1px solid white;
+  height: 100vh;
+  scroll-snap-align: start;
+  /* text-align: center; */
+  position: relative;
 }
 
 a {
@@ -30,17 +42,18 @@ div.namecareer {
   border-bottom-width: 10px;
   background-color: white;
   padding-left: var(--left-indent);
-  margin-top: 100px;
+  margin-top: 60px;
   height: 150px;
+  margin-bottom: 70px;
 }
 div.namecareertextbox{
   position: relative;
   top: -30px;
 }
 div.banner-parallax{
-  background-image: url("/images/bannerbg.jpg");
+  background-image: url("/images/bannerbg2.jpg");
   height: 300px;
-  /* position: absolute; */
+  position: absolute;
   width: 100%;
   z-index: -1;
   top: 0;
@@ -86,14 +99,14 @@ span + span {
 
 footer.contactinfobox{
   flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
-  padding: 20px;
-  background: #9fd86b;
+  /* padding: 20px; */
+  background: #07abb7;
   color: black;
   font-size: 20px;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
-  height: 75px;            /* Footer height */
+  height: 60px;            /* Footer height */
 }
 
 img.profilepicture{
@@ -117,6 +130,10 @@ div.aboutmetext{
   width: 60%;
 }
 
+div.logobox{
+  padding-top: 6px;
+}
+
 div.logo{
   height: 50px;
   width: 33%;
@@ -125,18 +142,18 @@ div.logo{
 }
 
 img.logo{
-  width: 50px;
+  width: 30px;
   margin-left: auto;
   margin-right: auto
 }
 div.socialmediatext{
   position: relative;
   /* display: inline-block; */
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 800;
-  color: #059B9A;
+  color: #000000;
   overflow: hidden;
-  background: linear-gradient(to right, #0C0636, #0C0636 50%, #059B9A 50%);
+  background: linear-gradient(to right, #3a3a3b, #3a3a3b 50%, #000000 50%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
