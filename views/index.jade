@@ -35,17 +35,23 @@ block aboutme
           | so stay tuned to see that project.
 
 block experience
-  section
-    div.intel
-        //- img.profilepicture(src="/images/profilepicture.jpg")
-        div.aboutexprience
-          //- h1.greeting="Hello,"
-          p.job
-            | Intern
-          ul.responsiblity
-            li 
-              | Utilize Caffe deep learning framework to classify static images.
-            li 
-              | Build upon image classification to develop video classification.
-            li 
-              | Improve Machine Learning accuracy through data aggregation, differing algorithms, and feature selection.
+    section
+        div.title
+            span
+                strong Experiences
+        div.timeline
+            ul.responsiblity
+                li
+                    h3.right Intel
+                    p(class="timelineright" data-aos="fade-up") Utilize Caffe deep learning framework to classify static images
+                    div(style="height:100px")
+                    p(class="timelineright" data-aos="fade-up") Build upon image classification to develop video classification
+                    div(style="height:100px")
+                    p(class="timelineright" data-aos="fade-up") Improve Machine Learning accuracy through data aggregation, differing algorithms, and feature selection
+                    div.time
+                        h4.left March 2019
+        div.intelImage.caffe
+
+        div(class="intelproject tiger" data-aos="fade-left" data-aos-duration="3000")
+        div(class="intelproject tigerDeconstructed" data-aos="fade-left" data-aos-duration="3000")
+        div(class="intelproject tigerClassified" data-aos="fade-left" data-aos-duration="3000")

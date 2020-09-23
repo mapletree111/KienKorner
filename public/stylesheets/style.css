@@ -2,9 +2,9 @@
   --left-indent: 100px;
 }
 html {
-  scroll-snap-type: mandatory;
-  scroll-snap-points-y: repeat(100vh);
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: mandatory; */
+  /* scroll-snap-points-y: repeat(100vh); */
+  /* scroll-snap-type: y mandatory; */
 }
 body {
   /* padding: 50px; */
@@ -163,4 +163,116 @@ div.socialmediatext{
 }
 div.socialmediatext:hover {
   background-position: 0 100%;
+}
+div.title{
+  text-align: center;
+  padding: 20px 0px 0px 10px;
+  height: 50px;
+  font-size: 35px;
+}
+.timeline{
+    content:'';
+    position:absolute;
+    left:50%;
+    width:2px;
+    height:100%;
+    background:#c5c5c5;
+}
+.timeline ul li
+{
+  content:'';
+  position:absolute;
+  width:10px;
+  height:10px;
+  top:200px;
+  right:-3.5px;
+  background:rgba(233,33,99,1);
+  border-radius:50%;
+  box-shadow:0 0 0 3px rgba(233,33,99,0.2);
+  list-style-type: none;
+}
+
+.timeline ul li h3.right{
+    /* padding: 0px 50px 0px 0px; */
+    margin:-29px 0px 0px 20px;
+    color:rgba(233,33,99,1);
+    font-weight:600;
+    font-size: 60px;
+}
+.timeline ul li .time h4{
+    margin:0;
+    padding:0;
+    font-size:14px;
+}
+
+.timeline ul li .time
+{
+  position:absolute;
+  top:-15px;
+  right:27px;
+  margin:0;
+  padding:8px 16px;
+  background:rgba(233,33,99,1);
+  color:#fff;
+  border-radius:18px;
+  box-shadow:0 0 0 3px rgba(233,33,99,0.3);
+  width:120px;
+}
+.timeline ul li h4.left{
+    font-weight:600;
+    font-size: 20px;
+    text-align:center;
+}
+
+.timeline ul li p.timelineright{
+    margin:10px 25px 0;
+    padding:0;
+    width: 400px;
+    font-size: 20px;
+  }
+.timeline ul li p.timelineleft{
+    margin:10px -415px 0;
+    text-align: right;
+    padding:0;
+    width: 400px;
+    font-size: 20px;
+}
+
+div.intelImage{
+    background-image: url(/images/caffe.png);
+    opacity: 0.25;
+    background-size: 20%;
+    height: 31%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    top: 33%;
+    background-position: 3% 45%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+div.intelproject{
+    background-size: 55%;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 100px;
+    height: 300px;
+    width: 321px;
+}
+div.tiger{
+    background-image: url(/images/tiger/tiger.jpeg);
+    left: 25%;
+    width: 300px;
+    top: 8%;
+}
+div.tigerDeconstructed{
+    background-image: url(/images/tiger/deconstructed_tiger.jpeg);
+    right: -31%;
+    top: -1%;
+}
+div.tigerClassified{
+    background-image: url(/images/tiger/tiger_classified.jpg);
+    right: -36%;
+    top: -7%;
+
 }
