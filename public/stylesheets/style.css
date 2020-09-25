@@ -257,22 +257,20 @@ div.intelproject{
     position: relative;
     top: 100px;
     height: 300px;
-    width: 321px;
+    width: 270px;
 }
 div.tiger{
     background-image: url(/images/tiger/tiger.jpeg);
-    left: 25%;
-    width: 300px;
-    top: 8%;
+    left: 23%;
+    top: 0%;
 }
 div.tigerDeconstructed{
     background-image: url(/images/tiger/deconstructed_tiger.jpeg);
-    right: -31%;
-    top: -1%;
+    left: 27%;
+    top: -15%;
 }
 div.tigerClassified{
     background-image: url(/images/tiger/tiger_classified.jpg);
-    right: -36%;
-    top: -7%;
-
+    left: 31%;
+    top: -30%;
 }
