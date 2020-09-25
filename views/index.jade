@@ -11,13 +11,13 @@ block aboutme
           h2.career= "Computer Science / Software Developer"
     div.links
       span
-        a.middle(href="/")
+        div.middle
           | HOME
       span
-        a.middle(href="/experience")
+        div.middle.experienceButton
           | EXPERIENCE
       span
-        a.middle(href="/projects")
+        div.middle
           | PROJECTS
     div.aboutme
       img.profilepicture(src="/images/profilepicture.jpg")
@@ -35,13 +35,13 @@ block aboutme
           | so stay tuned to see that project.
 
 block experience
-    section
+    section.experienceSection
         div.title
             span
-                strong Experiences
+                strong Experience
         div.timeline
             ul.responsiblity
-                li
+                li.intel
                     h3.right Intel
                     p(class="timelineright" data-aos="fade-up") Utilize Caffe deep learning framework to classify static images
                     div(style="height:70px")
@@ -49,21 +49,22 @@ block experience
                     div(style="height:70px")
                     p(class="timelineright" data-aos="fade-up") Improve Machine Learning accuracy through data aggregation, differing algorithms, and feature selection
                     div.time
-                        h4.left April 2017
+                        h4 April 2017
         div.intelImage.caffe
 
         div(class="intelproject tiger" data-aos="fade-left" data-aos-duration="3000")
         div(class="intelproject tigerDeconstructed" data-aos="fade-left" data-aos-duration="3000")
         div(class="intelproject tigerClassified" data-aos="fade-left" data-aos-duration="3000")
 
+    section
         div.timeline
             ul.responsiblity
-                li
-                    h3.right Intel
-                    p(class="timelineright" data-aos="fade-up") Utilize Caffe deep learning framework to classify static images
+                li.intel.tektronix
+                    h3.left Tektronix
+                    p(class="timelineleft" data-aos="fade-up") Deploy and develop PRISM UI through EmberJS framework
                     div(style="height:100px")
-                    p(class="timelineright" data-aos="fade-up") Build upon image classification to develop video classification
+                    p(class="timelineleft" data-aos="fade-up") Develop regression test system taking advantage of Jenkins, Docker, and Pytest
                     div(style="height:100px")
-                    p(class="timelineright" data-aos="fade-up") Improve Machine Learning accuracy through data aggregation, differing algorithms, and feature selection
-                    div.time
-                        h4.left April 2017
+                    p(class="timelineleft" data-aos="fade-up") Work with customers to develop solutions for existing problems and fix customer found defects
+                    div.time.right
+                        h4 June 2018
