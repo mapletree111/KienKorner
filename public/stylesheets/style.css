@@ -13,6 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  min-width: 1450px;
 }
 
 section {
@@ -259,7 +260,7 @@ p.timelineleft{
 div.intelImage{
     background-image: url(/images/caffe.png);
     opacity: 0.25;
-    background-size: 20%;
+    background-size: 300px;
     height: 31%;
     position: absolute;
     width: 100%;
