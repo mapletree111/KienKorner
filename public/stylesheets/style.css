@@ -18,7 +18,7 @@ body {
 
 section {
   border-bottom: 1px solid white;
-  height: 100vh;
+  min-height: 100vh;
   scroll-snap-align: start;
   /* text-align: center; */
   position: relative;
@@ -196,7 +196,7 @@ div.title{
   box-shadow:0 0 0 3px rgba(233,33,99,0.2);
   list-style-type: none;
 }
-.timeline ul li.tektronix
+.timeline ul li.tektronix li.tektronix
 {
   top: 0px;
 }
@@ -281,15 +281,53 @@ div.intelproject{
 div.tiger{
     background-image: url(/images/tiger/tiger.jpeg);
     left: 23%;
-    top: 0%;
 }
 div.tigerDeconstructed{
     background-image: url(/images/tiger/deconstructed_tiger.jpeg);
     left: 27%;
-    top: -15%;
+    top: -20px;
 }
 div.tigerClassified{
     background-image: url(/images/tiger/tiger_classified.jpg);
     left: 31%;
-    top: -30%;
+    top: -110px;
+}
+div.project-img{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;    
+}
+div.prism{
+    background-image: url(/images/prism.png);
+    height: 400px;
+    width: 600px;    
+    top: 300px;
+    right: 100px;
+}
+div.technologies{
+    opacity: 0.25;
+    background-size: 100px;
+    height: 30%;
+    width: 100%;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    top: 550px;
+    left: 800px;
+
+}
+div.docker{
+    background-image: url(/images/docker.png);
+    background-position: 70% 78%;
+
+}div.jenkins{
+    background-image: url(/images/jenkins.png);
+    background-position: 80% 80%;
+}
+div.generator{
+    background-image: url(/images/generator.png);
+    height: 400px;
+    width: 600px;    
+    top: 300px;
+    left: 100px;
 }

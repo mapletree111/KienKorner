@@ -9,9 +9,13 @@ $(window).on('beforeunload', function(){
 $(window).on('load', function () {
 
     $(".experienceButton").click(function() {
-        console.log("Fuck me")
         $('html,body').animate({
             scrollTop: $(".experienceSection").offset().top},
+            'slow');
+    });
+    $(".projectsButton").click(function() {
+        $('html,body').animate({
+            scrollTop: $(".projectSection").offset().top},
             'slow');
     });
 });

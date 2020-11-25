@@ -11,20 +11,17 @@ block aboutme
           h2.career= "Computer Science / Software Developer"
     div.links
       span
-        div.middle
-          | HOME
-      span
         div.middle.experienceButton
           | EXPERIENCE
       span
-        div.middle
+        div.middle.projectsButton
           | PROJECTS
     div.aboutme
       img.profilepicture(src="/images/profilepicture.jpg")
       div.aboutmetext
         h1.greeting="Hello,"
         p.greeting
-          | As a software engineer, I enjoy the long walks through bugs and code reviews.
+          | As a software developer, I enjoy the long walks through bugs and code reviews.
           | In all seriousness, my passion in software engineering stems from my enjoyment for problem solving.
           | This profession constantly challenges me and understand and adapt to new situation.
           br
@@ -59,12 +56,39 @@ block experience
     section
         div.timeline
             ul.responsiblity
-                li.intel.tektronix
+                li.tektronix
                     h3.left Tektronix
                     p(class="timelineleft" data-aos="fade-up") Deploy and develop PRISM UI through EmberJS framework
                     div(style="height:100px")
                     p(class="timelineleft" data-aos="fade-up") Develop regression test system taking advantage of Jenkins, Docker, and Pytest
                     div(style="height:100px")
-                    p(class="timelineleft" data-aos="fade-up") Work with customers to develop solutions for existing problems and fix customer found defects
+                    p(class="timelineleft" data-aos="fade-up") Work with customers and marketing to develop new features for existing products
                     div.time.right
                         h4 June 2018
+
+        div(class="project-img prism" data-aos="fade-right" data-aos-duration="3000")
+        div(class="project-img technologies jenkins")
+        div(class="project-img technologies docker")
+
+        
+    section
+        div.timeline
+            ul.responsiblity
+                li.telestream
+                    h3.right Telestream
+                    p(class="timelineright" data-aos="fade-up") Work with FPGA team to add software support for new features
+                    div(style="height:75px")
+                    p(class="timelineright" data-aos="fade-up") Research and develop ways to implement PTP into new product
+                    div(style="height:75px")
+                    p(class="timelineright" data-aos="fade-up") Develop new front end UI utilizing ReactJS, Redux, and Websockets
+                    div(style="height:75px")
+                    p(class="timelineright" data-aos="fade-up") Implement SCRUM practices as SCRUM master of devleopment team
+                    div.time
+                        h4 July 2019
+        div(class="project-img generator" data-aos="fade-right" data-aos-duration="3000")
+        
+block projects
+    section.projectSection
+        div.title
+            span
+                strong Projects
