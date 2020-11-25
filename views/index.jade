@@ -65,10 +65,10 @@ block experience
                     p(class="timelineleft" data-aos="fade-up") Work with customers and marketing to develop new features for existing products
                     div.time.right
                         h4 June 2018
-
-        div(class="project-img prism" data-aos="fade-right" data-aos-duration="3000")
-        div(class="project-img technologies jenkins")
-        div(class="project-img technologies docker")
+        div.rightSide
+            div(class="project-img prism" data-aos="fade-right" data-aos-duration="3000")
+            div(class="project-img technologies jenkins")
+            div(class="project-img technologies docker")
 
         
     section
@@ -92,3 +92,41 @@ block projects
         div.title
             span
                 strong Projects
+        div.firePredictions
+            h3.project Fire Predictor Application
+            div.carousel
+                div.slideshow-container
+                    div.mySlides.fade
+                        div.numbertext 1 / 4
+                        img.slideShowImg(src="/images/firePredictionProject/clustering.png")
+                        div.captionText Results from K-means clustering colors represents areas found to be most similar
+                    div.mySlides.fade
+                        div.numbertext 2 / 4
+                        img.slideShowImg(src="/images/firePredictionProject/callsFromCensus.png")
+                        div.captionText 911 Calls (dependent variable) bounded by K-means clustering
+                    div.mySlides.fade
+                        div.numbertext 3 / 4
+                        img.slideShowImg(src="/images/firePredictionProject/flowChart.png")
+                        div.captionText Flow chart illustrating method descibed
+                    div.mySlides.fade
+                        div.numbertext 4 / 4
+                        img.slideShowImg(src="/images/firePredictionProject/graph.png")
+                    a.prev(onClick="plusSlides(-1)") &#10094;
+                    a.next(onClick="plusSlides(1)") &#10095;
+                div(style="text-align:center")
+                    span.dot(onclick="currentSlide(1)")
+                    span.dot(onclick="currentSlide(2)")
+                    span.dot(onclick="currentSlide(3)")
+                    span.dot(onclick="currentSlide(4)")
+            div.divider
+            div.projectInfo
+                h1 Goal: 
+                p.projectText Use a stochastic search algorithm to predict where future fires are likely to occur, drawing from U.S. Census and local county data.
+                h1 Method:
+                p.projectText 
+                    ul
+                        li.project Extract attributes (independent variables) from U.S. Census and local county data
+                        li.project Quantize aggregated data through use of K-means clustering
+                        li.project Run clusters through Geographically Weighted Regression (GWR) algorithm
+                        li.project Take GWR output and run through Genetric Algorithm (GA), selecting different independent variables against dependent variables (# of 911 calls)
+                        li.project Test GA results with unused data and compare results
