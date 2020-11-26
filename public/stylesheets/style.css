@@ -321,7 +321,7 @@ div.technologies{
     background-size: 100px;
     height: 38%;
     position: absolute;
-    width: 948px;
+    min-width: 800px;
     z-index: -1;
     top: 60%;
     background-repeat: no-repeat;

@@ -135,4 +135,16 @@ block projects
         div.dayTradingIndicator
             h3.project Stock Day Trading Indicator
             div.carousel
-                img.slideShowImg(src="/images/stockDayTrading/stockVolumeMACD.JPG")
+                img.slideShowImg(src="/images/stockDayTrading/stockIndicatorGraphics.png" style="min-width: 900px; margin:50px")
+            div.divider(style="height: 550px;")
+            div.projectInfo
+                h1 Goal: 
+                p.projectText Develop a day trading indicator that would signal a good time to buy/sell
+                h1 Method:
+                p.projectText
+                    ul
+                        li.project Using ThinkOrSwim scripting language, calculate the Volume Weighted MACD, Stochastic Oscillator, and Relative Strength Index (RSI) of the desire security
+                        li.project Add specific "weights" on each calculated measurement to determin which should have a stronger pull on whether to buy/sell
+                        li.project Take another (usually higher volume) security and calculate the same previous 3 measurements
+                        li.project Calculate final indicator value based of the summation of previous measurements (0 = No buy/sell, +/-0.5 = Weak buy/sell, +/-1 = Good buy/sell, +/-2 = Strong buy/sell)
+                        li.project Compare desire security's indicator calulation to the other security and check to see where they agree
